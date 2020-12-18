@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aline.splashdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.BigImageActivity"></activity>
+        <activity android:name=".activity.RecyclerViewActivity" />
+        <activity android:name=".activity.TestExtendsActivity" />
+        <activity android:name=".http.RequestActivity" />
+        <activity
+            android:name=".demo.FourActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".demo.ThreeActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".demo.TwoActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".demo.OneActivity" />
+        <activity android:name=".activity.BActivity" />
+        <activity
+            android:name=".activity.AActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".activity.LifeCycleActivity" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".activity.ViewGroupInterTouchActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".service.ServiceOnePixelActivity"
+            android:theme="@style/LiveStyle" />
+        <activity android:name=".activity.HiltActivity" />
+        <activity android:name=".activity.GlideProgressActivity" />
+        <activity android:name=".activity.TestWorkBenchActivity" />
+        <activity android:name=".activity.MyFragmentActivity" />
+        <activity
+            android:name=".SaveInstanceStateActivity"
+            android:screenOrientation="fullSensor" />
+        <activity android:name=".handler.HandlerPostActivity" />
+        <activity android:name=".TestParcelableActivity" />
+        <activity android:name=".handler.HandlerThreadActivity" />
+        <activity android:name=".handler.HandlerActivity" />
+        <activity android:name=".MyViewActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.LiveService"
+            android:process=":live_service" />
+
+        <meta-data
+            android:name="com.aline.splashdemo.glide.MyGlideModule"
+            android:value="GlideModule" />
+    </application>
+
+</manifest>

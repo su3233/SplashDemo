@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyViewActivity">
+
+    <com.aline.splashdemo.view.MyView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bgDrawable="@drawable/bg_splash"
+        app:color="@color/colorAccent"
+        app:myTextSize="15sp" />
+
+    <com.aline.splashdemo.view.MyViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </com.aline.splashdemo.view.MyViewGroup>
+</LinearLayout>

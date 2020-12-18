@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LifeCycleActivity">
+
+    <Button
+        android:id="@+id/bt_show_hide_fm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示/隐藏framgnet" />
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_hide_fm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="隐藏framgnet" />
+
+        <Button
+            android:id="@+id/bt_show_fm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示framgnet" />
+    </LinearLayout>-->
+
+
+    <Button
+        android:id="@+id/bt_replace_fm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="替换framgnet" />
+
+    <LinearLayout
+        android:id="@+id/ll_fm_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <!-- <LinearLayout
+         android:id="@+id/ll_fm_2"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:orientation="vertical" />-->
+</LinearLayout>

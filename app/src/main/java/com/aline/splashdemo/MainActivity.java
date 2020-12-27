@@ -13,6 +13,7 @@ import com.aline.splashdemo.activity.LifeCycleActivity;
 import com.aline.splashdemo.activity.RecyclerViewActivity;
 import com.aline.splashdemo.service.ScreenBroadcastListener;
 import com.aline.splashdemo.service.ScreenManager;
+import com.aline.splashdemo.service.ServiceActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -45,6 +46,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.bt_hash_recycler).setOnClickListener(this);
         findViewById(R.id.bt_activity_life).setOnClickListener(this);
         findViewById(R.id.bt_big_iamge).setOnClickListener(this);
+        findViewById(R.id.bt_service).setOnClickListener(this);
     }
 
     @Override
@@ -63,6 +65,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.bt_big_iamge:
                 startActivity(new Intent(context, BigImageActivity.class));
+                break;
+            case R.id.bt_service:
+                startActivity(new Intent(context, ServiceActivity.class));
                 break;
         }
     }

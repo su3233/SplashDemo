@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".service.ServiceActivity">
+
+    <Button
+        android:id="@+id/bt_start_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start服务" />
+
+    <Button
+        android:id="@+id/bt_stop_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stop服务" />
+
+    <Button
+        android:id="@+id/bt_bind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bind服务" />
+
+    <Button
+        android:id="@+id/bt_invoke_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用binder调用service" />
+
+    <Button
+        android:id="@+id/bt_unbind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="unbind服务" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/bt_messenger_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bind有messenger的service" />
+
+    <Button
+        android:id="@+id/bt_service_messenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="remote+Messenger服务" />
+
+    <Button
+        android:id="@+id/bt_messenger_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="unbind有messenger的service" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/bt_start_for_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="启动前台service" />
+
+    <Button
+        android:id="@+id/bt_stop_for_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="结束前台service" />
+
+</LinearLayout>

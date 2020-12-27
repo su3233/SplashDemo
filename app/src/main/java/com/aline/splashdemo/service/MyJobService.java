@@ -21,7 +21,8 @@ public class MyJobService extends JobService {
 
     public void startJobSheduler() {
         try {
-            JobInfo.Builder builder = new JobInfo.Builder(1, new ComponentName(getPackageName(), MyJobService.class.getName()));
+            JobInfo.Builder builder = new JobInfo.Builder(1,
+                    new ComponentName(getPackageName(), MyJobService.class.getName()));
             builder.setPeriodic(5);
             builder.setPersisted(true);
             JobScheduler jobScheduler = (JobScheduler) this.getSystemService(Context.JOB_SCHEDULER_SERVICE);

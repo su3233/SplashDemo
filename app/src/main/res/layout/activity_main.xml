@@ -24,4 +24,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="大图加载" />
+    <Button
+        android:id="@+id/bt_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="service" />
 </LinearLayout>

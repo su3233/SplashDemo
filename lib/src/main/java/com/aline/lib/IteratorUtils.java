@@ -20,10 +20,24 @@ class IteratorUtils {
     public static void main(String[] args) {
 //        diedai();
 //        listIterator();
+//        mapEntryset();
         mapIterator();
     }
 
     private static void mapIterator() {
+        Map<String, String> stringMap = new HashMap<>();
+        for (int i = 0; i < 10; i++) {
+            stringMap.put("map key:" + i, "map value:" + i);
+        }
+        Set<Map.Entry<String, String>> entries = stringMap.entrySet();
+        Iterator<Map.Entry<String, String>> iterator = entries.iterator();
+        while (iterator.hasNext()){
+            Map.Entry<String, String> entry = iterator.next();
+            System.out.println(entry.getKey()+"..."+entry.getValue());
+        }
+    }
+
+    private static void mapEntryset() {
         Map<String, String> stringMap = new HashMap<>();
         for (int i = 0; i < 10; i++) {
             stringMap.put("map key:" + i, "map value:" + i);

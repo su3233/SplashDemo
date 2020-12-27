@@ -48,7 +48,8 @@ public class KeepLiveService extends Service {
 
         @Override
         public void onCreate() {
-            super.onCreate(); //发送与 KeepLiveService 中 ID 相同的 Notification，然后将其取消并取消自己的前台显示
+            super.onCreate();
+            //发送与 KeepLiveService 中 ID 相同的 Notification，然后将其取消并取消自己的前台显示
             Notification.Builder builder = new Notification.Builder(this);
             builder.setSmallIcon(R.mipmap.ic_launcher);
             startForeground(NOTIFICATION_ID, builder.build());

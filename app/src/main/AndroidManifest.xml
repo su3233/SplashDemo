@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.BigImageActivity"></activity>
+        <activity android:name=".service.ServiceActivity"></activity>
+        <activity android:name=".activity.BigImageActivity" />
         <activity android:name=".activity.RecyclerViewActivity" />
         <activity android:name=".activity.TestExtendsActivity" />
         <activity android:name=".http.RequestActivity" />
@@ -65,6 +66,16 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name=".service.RemoteService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" />
+
+        <service android:name=".service.ServiceMethod" />
+        <!--前台服务-->
+        <service android:name=".service.ForegroundService" />
+        <!--使用独立进程-->
         <service
             android:name=".service.LiveService"
             android:process=":live_service" />

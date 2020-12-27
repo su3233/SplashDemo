@@ -4,7 +4,8 @@ import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
 
 /**
- * NotificationListenerService 就是一个监听 通知的服务，只要手机收到了通知，NotificationListenerService 都能监听到，
+ * NotificationListenerService 就是一个监听通知的服务，只要手机收到了通知，NotificationListenerService
+ * 都能监听到，
  *
  * @author SuTs
  * @create 2020/11/25 14:33
